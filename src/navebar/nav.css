@@ -1,0 +1,63 @@
+.marquee{
+  font-size:1.2rem ;
+  padding: 0;
+}
+header{
+  background-color: rgb(6, 6, 60);
+  color: rgb(255, 255, 255);
+}
+.header-span{
+  font-size: 1.2rem;
+}
+.navbar{
+  background-color: rgb(175, 239, 239);
+  overflow: hidden;
+}
+
+
+
+/* for extra small screen like mobile*/
+@media (max-width:575.98px){
+  .marquee{
+    padding: 0 20rem;
+    /* font-size: .8rem; */
+  }
+  .header-span{
+    font-size: 1rem;
+  }
+}
+
+/* small device landscape mode*/
+@media (min-width:576px) and (max-width:767.98px){
+
+}
+
+/* meadium devices tablet*/
+@media (min-width:768px) and (max-width:992.98px){
+
+}
+
+/* large device linke laptop and desktops*/
+@media (min-width:992px)  {
+  .nav-items{
+    margin-left:15rem;
+  }
+  .nav-item{
+    padding:0 25px;
+  }
+  .nav-btn{
+    margin: 0;
+  }
+
+
+}
+
+/* Extra large device linke large laptop and large desktops*/
+@media (min-width:1199.99px)and (max-width:1399.99px){
+ 
+}
+
+/* xxl devices exta large monitors */
+@media (min-width:1400px){
+
+}
