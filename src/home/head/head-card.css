@@ -1,0 +1,39 @@
+.head-card{
+  position: relative;
+  min-width: 23%;
+  padding: 2rem;
+  background-color: rgb(70, 142, 118);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  color: white;
+
+}
+.legend{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top:8px;
+  font-weight: bold;
+  float: none;
+  display: inline;
+  border-radius: 50%;
+  background-color: azure;
+  color: black;
+}
+.head-card:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.21);
+}
+.headcard-parah{
+  font-size: .9rem;
+  font-weight: 400;
+  word-spacing: .3rem;
+}
+
+@media (max-width:1000px) {
+  .head-card{
+    max-height: 20rem;
+    padding: 10px 16px;
+  }
+}   

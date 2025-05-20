@@ -1,0 +1,18 @@
+.home-head{
+  background-image: url(../assets/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
+  background-size:cover;
+  background-position: center;
+  height: 80vh;
+  padding:5rem 10rem 7rem;
+}
+.home-parah{
+  max-width: 80%;
+}
+@media (max-width:575.98px){
+  .home-head{
+   padding:3rem;
+  }
+  .home-parah{
+    max-width: 100%;
+  }
+}
