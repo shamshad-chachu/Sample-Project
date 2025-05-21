@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 import Home from "../home/home.jsx"
 import './nav.css'
 
 function nav() {
+
+  const [IsEnquairy,setIsEnquairy] = useState(false)
   return (
     <Router>
     <div className="">
@@ -27,13 +29,15 @@ function nav() {
   <div class="container-fluid">
     <a class="navbar-brand fs-2" href="#"><i class="bi bi-mortarboard-fill text-success"></i>
     <span className='text-success fw-bold ms-1'>Rj Technology</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={()=>{
+      setIsEnquairy(false)
+    }}>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse nav-items " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 d-lg-flex align-items-center d-block ">
         <Link to="/" className='text-decoration-none'><li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li></Link>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">About</a>
@@ -53,14 +57,16 @@ function nav() {
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Contact</a>
         </li>
-        <button type="button" class="btn btn-success px-4  h-100 ms-0 ms-lg-5 ms-0  nav-btn">Success</button>
+        <button type="button" class="btn btn-success px-3 py-1  ms-0 ms-lg-5 ms-0  nav-btn" onClick={()=>{
+          setIsEnquairy(!IsEnquairy)
+        }}>Enquiry</button>
       </ul>
     </div>
   </div>
 </nav>
     </div>
     <Routes>
-    <Route path='/' element={<Home/>}>
+    <Route path='/' element={<Home IsEnquairy={IsEnquairy}/>}>
     </Route>
     </Routes>
     </Router>

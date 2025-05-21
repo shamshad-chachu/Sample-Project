@@ -13,6 +13,13 @@ header{
   background-color: rgb(175, 239, 239);
   overflow: hidden;
 }
+.nav-btn{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.nav-btn:hover{
+  color: red;
+}
 
 
 
