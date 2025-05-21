@@ -1,0 +1,23 @@
+.main-card{
+  min-width:30%
+}
+.main-card-h1{
+  background-color: rgb(4, 195, 118);
+  width: 100%;
+}
+.main-card-card{
+    padding: 2rem;
+    box-shadow: 1px 5px 8px #3955f779;
+}
+.main-card-card-h1{
+  color: rgba(0, 0, 0, 0.758);
+}
+.main-card-parah{
+  color: rgba(0, 0, 0, 0.674);
+}
+.main-card-btn{
+  background-color:  rgb(4, 195, 118);
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+}

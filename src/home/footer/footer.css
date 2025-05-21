@@ -1,0 +1,39 @@
+.footer{
+  background-color: rgb(228, 247, 247);
+  overflow: hidden;
+  padding: 0;
+}
+.footer-icon{
+  font-size: 1.6rem;
+}
+
+.footer p{
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.786);
+  }
+  .footer h3{
+    margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.email-icon{
+  font-size: 2rem;
+  position: relative;
+  top: 5px;
+  }
+.footer-icons{
+  margin-top: 1rem;
+    font-size: 2rem;
+    display: flex;
+    gap: 20px;
+    
+}
+@media (max-width:800px) {
+  .footer{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

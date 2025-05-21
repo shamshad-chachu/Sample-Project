@@ -4,9 +4,37 @@
   background-position: center;
   height: 80vh;
   padding:5rem 10rem 7rem;
+  color: white;
+  animation: anime 20s  infinite ;
 }
 .home-parah{
   max-width: 80%;
+}
+
+@keyframes anime {
+  0%{
+    background-image: url(../assets/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
+
+  }
+  20%{
+    background-image: url(../assets/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+
+  }
+  40%{
+    background-image: url(../assets/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
+
+  }
+  60%{
+    background-image: url(../assets/images/helena-lopes-PGnqT0rXWLs-unsplash.jpg);
+
+  }
+  80%{
+    background-image: url(../assets/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+  }
+  100%{
+    background-image: url(../assets/images/jason-goodman-Oalh2MojUuk-unsplash.jpg);
+
+  }
 }
 @media (max-width:575.98px){
   .home-head{

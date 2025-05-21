@@ -1,9 +1,11 @@
 import React from 'react'
 import './home.css'
 import Head from './head/head.jsx'
+import Main from './main/main.jsx'
+import Footer from './footer/footer.jsx'
 function home() {
   return (<>
-    <div className='container-fluid home-head text-white'> 
+    <div className='container-fluid home-head'> 
     <h1 className='pb-4'>Rj Technologies..</h1>
     <h4 className='pb-4'>Best Online & Classroom Training Institute</h4>
     <p className='pb-5 fs-6 home-parah'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore at sit quam quasi ullam expedita 
@@ -14,6 +16,8 @@ function home() {
        <button className='bg-success text-light px-4 py-2 fw-bold fs-5 border-0'>Apply Online</button>
     </div>
     <Head/>
+    <Main/>
+    <Footer/>
     </>
   )
 }
