@@ -11,7 +11,7 @@ header{
 }
 .navbar{
   background-color: rgb(175, 239, 239);
-  overflow: hidden;
+  /* overflow: hidden; */            /*it will create a issue with dropdown in nav */
 }
 .nav-btn{
   font-size: 1.4rem;

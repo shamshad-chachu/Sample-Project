@@ -46,7 +46,7 @@ function nav() {
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Course
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Front End</a></li>
             <li><a class="dropdown-item" href="#">Back End</a></li>
           </ul>
