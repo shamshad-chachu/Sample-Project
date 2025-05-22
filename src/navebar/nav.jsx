@@ -7,6 +7,7 @@ import './nav.css'
 function nav() {
 
   const [IsEnquairy,setIsEnquairy] = useState(false)
+  
   return (
     <Router>
     <div className="">
@@ -36,7 +37,7 @@ function nav() {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse nav-items " id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 d-lg-flex align-items-center d-block ">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 d-lg-flex align-items-center d-block position-relative">
         <Link to="/" className='text-decoration-none'><li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li></Link>
@@ -61,13 +62,35 @@ function nav() {
         <button type="button" class="btn btn-success px-3 py-1  ms-0 ms-lg-5 ms-0  nav-btn" onClick={()=>{
           setIsEnquairy(!IsEnquairy)
         }}>Enquiry</button>
+
+        {IsEnquairy && <div className='enquairy-container '>
+            <h5 className='text-center mb-3 text-dark'>Request forClass Room & Online Training Quotation</h5>
+            <ul className='enquairy-head'>
+              <i class="bi bi-house-door-fill"></i>
+              <h5 className='m-0'>Classroom</h5>
+              <i class="bi bi-laptop"></i>
+              <h5 className='m-0'>Online</h5>
+            </ul>
+            <input type="text" placeholder='Enter Your Name'required/><br></br>
+            <input type="email" placeholder='Enter Your Email' required/><br></br>
+            <input type="number" placeholder='Enter Your Mobile No' required/><br></br>
+            <select>
+              <option value="Select Course">Select Course</option>
+              <option value="HTML5">HTML5</option>
+              <option value="CSS">CSS</option>
+              <option value="Javascript">Javascript</option>
+              <option value="React JS">React JS</option>
+            </select><br></br>
+            <button className='enquairy-btn'>Submit Query</button>
+        </div>}
+
       </ul>
     </div>
   </div>
 </nav>
     </div>
     <Routes>
-    <Route path='/' element={<Home IsEnquairy={IsEnquairy}/>}/>
+    <Route path='/' element={<Home/>}/>
     <Route path='/Frontend' element={<FrontEnd/>}/>
     </Routes>
     </Router>

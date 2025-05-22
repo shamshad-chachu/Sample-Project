@@ -6,7 +6,6 @@
   padding:5rem 10rem 7rem;
   color: white;
   animation: anime 20s  infinite ;
-  
 }
 .home-parah{
   max-width: 80%;
@@ -48,7 +47,7 @@
   color: black;
   position: absolute;
   border-radius: 18px;
-  bottom: 25%;
+  bottom: 15%;
   left: 25%;
   max-width: 500px;
   display: flex;
@@ -82,46 +81,7 @@
   top:0px;
   right: 10px;
 }
-.enquairy-container{
-  background-color: white;
-  position: absolute;
-  max-width: 400px;
-  right: 10px;
-  top: 0;
-  border-radius: 15px;
-  padding: 30px;
-}
-.enquairy-container input,select{
-  width: 100%;
-  /* border: none; */
-  padding:10px 10px 5px;
-  margin-bottom: 1rem;
-}
-.enquairy-container select{
-  /* border-bottom: 3px solid rgb(24, 129, 235); */
-  box-shadow: 0px 2px 3px rgb(24, 129, 235) ;
-  outline: none;
-}
-.enquairy-head{
-  padding: 0 20px;
-  background-color: rgb(24, 129, 235);
-  display: flex;
-  color: black;
-  justify-content: space-between;
-  align-items: center;
-}
-.enquairy-head i{
-  font-size: 1.4rem;
-}
 
-.enquairy-btn{
-width: 100%;
-border: none;
-background-color: rgb(24, 129, 235);
-border: none;
-font-weight: bold;
-padding: 5px 0;
-}
 
 
 
@@ -151,5 +111,13 @@ padding: 5px 0;
   .apply-container{
     max-width: 300px;
     left: 10%;
+    bottom: -150px;
+  }
+}
+
+@media (max-width:900px){
+  .apply-container{
+    left: 45%;
+    bottom: 100px;
   }
 }

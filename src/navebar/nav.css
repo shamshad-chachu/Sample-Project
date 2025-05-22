@@ -22,6 +22,49 @@ header{
 }
 
 
+.enquairy-container{
+  background-color: white;
+  position: absolute;
+  max-width: 400px;
+  right:10px;
+  top:70px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 1px 1px 10px hsl(0, 0%, 70%);
+}
+.enquairy-container input,select{
+  width: 100%;
+  /* border: none; */
+  padding:10px 10px 5px;
+  margin-bottom: 1rem;
+}
+.enquairy-container select{
+  /* border-bottom: 3px solid rgb(24, 129, 235); */
+  box-shadow: 0px 2px 3px rgb(24, 129, 235) ;
+  outline: none;
+}
+.enquairy-head{
+  padding: 0 20px;
+  background-color: rgb(24, 129, 235);
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+.enquairy-head i{
+  font-size: 1.4rem;
+}
+
+.enquairy-btn{
+width: 100%;
+border: none;
+background-color: rgb(24, 129, 235);
+border: none;
+font-weight: bold;
+padding: 5px 0;
+}
+
+
 
 /* for extra small screen like mobile*/
 @media (max-width:575.98px){
@@ -34,15 +77,6 @@ header{
   }
 }
 
-/* small device landscape mode*/
-@media (min-width:576px) and (max-width:767.98px){
-
-}
-
-/* meadium devices tablet*/
-@media (min-width:768px) and (max-width:992.98px){
-
-}
 
 /* large device linke laptop and desktops*/
 @media (min-width:992px)  {
@@ -59,12 +93,9 @@ header{
 
 }
 
-/* Extra large device linke large laptop and large desktops*/
-@media (min-width:1199.99px)and (max-width:1399.99px){
- 
-}
-
-/* xxl devices exta large monitors */
-@media (min-width:1400px){
-
+@media (max-width:600px) {
+  .enquairy-container{
+    top: 310px;
+  }
+  
 }
