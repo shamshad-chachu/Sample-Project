@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 import Home from "../home/home.jsx"
+import FrontEnd from '../FrontEnd/frontEnd.jsx'
 import './nav.css'
 
 function nav() {
@@ -47,7 +48,7 @@ function nav() {
             Course
           </a>
           <ul class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Front End</a></li>
+            <Link to='/Frontend' className='text-decoration-none'><li><a class="dropdown-item" href="#">Front End</a></li></Link>
             <li><a class="dropdown-item" href="#">Back End</a></li>
           </ul>
         </li>
@@ -66,8 +67,8 @@ function nav() {
 </nav>
     </div>
     <Routes>
-    <Route path='/' element={<Home IsEnquairy={IsEnquairy}/>}>
-    </Route>
+    <Route path='/' element={<Home IsEnquairy={IsEnquairy}/>}/>
+    <Route path='/Frontend' element={<FrontEnd/>}/>
     </Routes>
     </Router>
   )
