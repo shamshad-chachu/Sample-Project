@@ -3,17 +3,22 @@ import './home.css'
 import Head from './head/head.jsx'
 import Main from './main/main.jsx'
 import Footer from './footer/footer.jsx'
+import { useNavigate } from 'react-router-dom'
 function home() {
   const [isApply,setIsapply] = useState(false)
   const [name,setname] =useState('')
   const[Mobile,steMobile] =useState(null)
-  
+  const Navigete = useNavigate();
   const handleMobile = (e)=>{
     let value = e.target.value
    if(/^\d{0,10}$/.test(value)){
     steMobile(value)
    }
   }
+  const handeleApply= ()=>{
+    Navigete('/Apply')
+  }
+
   return (<>
     <div className='container-fluid home-head'> 
     <h1 className='pb-4'>Rj Technologies..</h1>
@@ -31,7 +36,7 @@ function home() {
           <input type="text"  placeholder='Name*' value={name} onChange={(e)=>{setname(e.target.value)}} required/><br></br>
           <input type="tel" placeholder='10 Digit Mobile No*' value={Mobile} onChange={handleMobile}  required/><br></br>
           <input type="text" placeholder='Email*' required /><br></br>
-          <textarea name="" id="" rows="2" style={{resize:"none",marginBottom:"20px"}}></textarea><br></br>
+          <textarea name="" id="" rows="2" style={{resize:"none",marginBottom:"20px"}} className='textArea'></textarea><br></br>
           <button type='submit' className='apply-form-btn'>I'm Intrested Tell Me More</button>
           <button className='cancel-btn' onClick={()=>setIsapply(false)}><i class="bi bi-x"></i></button>
         </form>
@@ -40,7 +45,7 @@ function home() {
     </div>
     
     <Head/>
-    <Main/>
+    <Main handeleApply = {handeleApply}/>
     <Footer/>
     </>
   )

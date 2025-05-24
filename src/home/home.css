@@ -57,7 +57,7 @@
 .apply-form-title{
   color: rgba(0, 0, 0, 0.741);
 }
-.apply-container input,textarea{
+.apply-container input,.textArea{
   font-size: 1.3rem;
   margin:10px 0;
   border: none;

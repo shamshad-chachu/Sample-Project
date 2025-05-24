@@ -2,6 +2,7 @@ import React from 'react'
 import './main-card.css'
 function MainCard(props) {
   const {head,content,title,icons}=props.props;
+  const {handeleApply} =props
   return (
     <div className='col-md-4 col-lg-1 col-12 main-card p-0'>
       <h2 className='main-card-h1 py-2 m-0 fs-3'>{head}</h2>
@@ -13,7 +14,7 @@ function MainCard(props) {
         })}
         </div>
         <p className='main-card-parah'>{content} </p>
-        <button className='main-card-btn'>Apply Online</button>
+        <button className='main-card-btn' onClick={handeleApply}>Apply Online</button>
       </div>
     </div>
   )

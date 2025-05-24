@@ -2,9 +2,9 @@ import React from 'react'
 import MainCard from './main-card'
 import './main.css'
 import Card from './main-card-details'
-function Main() {
-
-
+function Main(props)
+{
+  const handeleApply = props.handeleApply
   return (
     <div className='row text-center p-5 pt-0'>
       <h1 className='mb-5 main-h1'>Our Courses</h1>
@@ -14,7 +14,7 @@ function Main() {
       </p>
       <div className="row d-flex gap-4  justify-content-center">
         {Card.map((item)=>{
-          return <MainCard props = {item}/>
+          return <MainCard props = {item} handeleApply = {handeleApply}/>
         })}
       </div>
        

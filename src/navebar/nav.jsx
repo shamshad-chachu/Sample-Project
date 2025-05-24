@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 import Home from "../home/home.jsx"
 import FrontEnd from '../FrontEnd/frontEnd.jsx'
 import './nav.css'
-
+import Applypage from '../Apply-page/apply-page.jsx'
 function nav() {
 
   const [IsEnquairy,setIsEnquairy] = useState(false)
@@ -92,6 +92,7 @@ function nav() {
     <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/Frontend' element={<FrontEnd/>}/>
+    <Route path='/Apply' element={<Applypage/>}/>
     </Routes>
     </Router>
   )
