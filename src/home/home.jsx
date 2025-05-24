@@ -4,6 +4,7 @@ import Head from './head/head.jsx'
 import Main from './main/main.jsx'
 import Footer from './footer/footer.jsx'
 import { useNavigate } from 'react-router-dom'
+
 function home() {
   const [isApply,setIsapply] = useState(false)
   const [name,setname] =useState('')

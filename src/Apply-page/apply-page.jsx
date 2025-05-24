@@ -19,40 +19,40 @@ function Applypage() {
         <form action="" className='row w-100 '>
             <div className="col-md-4  mb-2">
               <label htmlFor="name">First Name</label><br/>
-              <input type="text" placeholder='First Name' id='name' className='w-100'/>
+              <input type="text" placeholder='First Name' required id='name' className='w-100'/>
             </div>
             <div className="col-md-4 mb-2">
               <label htmlFor="last-name">Last Name</label><br/>
-              <input type="text" placeholder='Last Name' id='last-name'  className='w-100'/>
+              <input type="text" placeholder='Last Name' id='last-name' required className='w-100'/>
             </div>
             <div className="col-md-4 mb-2">
               <label htmlFor="age">Age</label><br/>
-              <input type="text" placeholder='18-100' id='age'  className='w-100'/>
+              <input type="number" placeholder='18-100' id='age' required className='w-100'/>
             </div>
             <div className="col-md-6 mb-2"> 
               <label htmlFor="number">Mobile Number</label><br/>
-              <input type="text" placeholder='****' id='number' className='w-100'/>
+              <input type='tel' placeholder='****' id='number' required className='w-100'/>
             </div>
             <div className="col-md-6 mb-2">
               <label htmlFor="email">Email</label><br/>
-              <input type="text"  placeholder='abc@xxx.zzz' id='email' className='w-100'/>
+              <input type="email"  placeholder='abc@xxx.zzz' id='email' required className='w-100'/>
             </div>
             <div className="col-12 mb-2">
               <label htmlFor="description">Description</label><br/>
-              <textarea name="" id="description" className='w-100' style={{resize:'none'}} rows='4'></textarea>
+              <textarea name="" id="description" className='w-100' required style={{resize:'none'}} rows='4'></textarea>
               <p className='text-end'>Max.150 characters</p>
             </div>
             <div className="col-md-6 mb-md-5 mb-3">
               <label htmlFor="password">Password</label><br/>
-              <input type="text" id='password' placeholder='Password'className='w-100' />
+              <input type="password" id='password' placeholder='Password' required className='w-100' />
             </div>
             <div className="col-md-6 mb-md-5 mb-4">
               <label htmlFor="Cpassword">Comfirm Password</label><br/>
-              <input type="text" id='Cpassword' placeholder='Comfirm Password' className='w-100'/>
+              <input type="password" id='Cpassword' placeholder='Comfirm Password' required className='w-100'/>
             </div>
             <div className="col-12 btn-box">
-              <button>Reset</button>
-              <button>submit</button>
+              <button type='reset'>Reset</button>
+              <button type='submit'>submit</button>
             </div>
         </form>
       </div>

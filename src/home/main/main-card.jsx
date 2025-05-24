@@ -1,5 +1,6 @@
 import React from 'react'
 import './main-card.css'
+
 function MainCard(props) {
   const {head,content,title,icons}=props.props;
   const {handeleApply} =props
