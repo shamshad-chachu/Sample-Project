@@ -12,7 +12,7 @@ function Main(props)
          labore minus quia facere! Minima saepe perspiciatis voluptatibus quisquam quaerat sed similique 
         blanditiis eligendi, animi quae, corrupti molestiae? Repellendus.
       </p>
-      <div className="row d-flex gap-4  justify-content-center">
+      <div className="row d-flex gap-4  justify-content-center ms-1 ms-md-0">
         {Card.map((item)=>{
           return <MainCard props = {item} handeleApply = {handeleApply}/>
         })}

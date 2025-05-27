@@ -4,6 +4,7 @@
 .main-card-h1{
   background-color: rgb(4, 195, 118);
   width: 100%;
+  font-size: 5rem;
 }
 .main-card-card{
     padding: 2rem;
@@ -21,3 +22,4 @@
   padding: 5px 10px;
   font-size: 18px;
 }
+

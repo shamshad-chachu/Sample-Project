@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 function Footer() {
   return (
-    <footer className='row footer ps-md-5 py-md-5 '>
+    <footer className='row footer px-md-5 py-md-5 '>
       <div className="col-12 col-md-5 col-lg-3  ps-md-3 ps-lg-4 ms-md-3 ms-lg-0">
       <i class="bi bi-mortarboard-fill text-success footer-icon"></i>
       <h3 className='d-inline-block ms-1 text-success'>Rj Technology</h3>

@@ -2,7 +2,7 @@
   background-image: url(../assets/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
   background-size:cover;
   background-position: center;
-  height: 80vh;
+  max-height: 80vh;
   padding:5rem 10rem 7rem;
   color: white;
   animation: anime 20s  infinite ;
@@ -108,17 +108,29 @@
   }
 }
 
-@media (max-width:600px) {
+/* @media (max-width:600px) {
   .apply-container{
     max-width: 300px;
     left: 10%;
     bottom: -150px;
   }
-}
+} */
 
 @media (max-width:900px){
   .apply-container{
     left: 45%;
     bottom: 100px;
+  }
+}
+
+@media (max-width:600px) {
+  .apply-container{
+    max-width: 300px;
+    max-height: 420px;
+    left: 0;
+    bottom:0;
+    top: 0;
+    right:0;
+    margin: auto;
   }
 }
