@@ -128,7 +128,7 @@
     max-width: 300px;
     max-height: 420px;
     left: 0;
-    bottom:0;
+    bottom:-30px;
     /* top: 0; */
     right:0;
     margin: auto;
