@@ -133,4 +133,7 @@
     right:0;
     margin: auto;
   }
+  .home-head{
+    max-height: 100%;
+  }
 }
